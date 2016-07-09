@@ -1,7 +1,7 @@
 # Cecile_RecipeTooltip
 World of Warcraft recipes tooltip Addon
 
-![alt tag](https://raw.githubusercontent.com/cecile/Cecile_RecipeTooltip/img/Cecile_RecipeTooltip.jpg)
+![alt tag](https://raw.githubusercontent.com/cecile/Cecile_RecipeTooltip/master/img/Cecile_RecipeTooltip.jpg)
 
 #Special thanks to:
 
