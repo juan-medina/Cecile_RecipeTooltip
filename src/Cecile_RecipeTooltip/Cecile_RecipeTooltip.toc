@@ -1,0 +1,17 @@
+## Interface: 60200
+## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|r
+## Notes: Improve Recipes Tooltips
+## Author: Cecile
+## Version: 1.0.0.beta
+## SavedVariables: Cecile_RecipeTooltipDB
+## OptionalDeps:
+## X-Icon: Interface\AddOns\Cecile_RecipeTooltip\media\icons\minimap
+
+libs\load_libs.xml
+locales\load_locales.xml
+media\load_media.xml
+
+main.lua
+
+modules\load_modules.xml
+config\load_config.xml

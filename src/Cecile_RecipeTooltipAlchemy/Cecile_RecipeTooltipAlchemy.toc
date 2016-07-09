@@ -1,0 +1,9 @@
+## Interface: 60200
+## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rAlchemy
+## Notes: Alchemy module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
+## Author: Cecile
+## Version: 1.0.0.beta
+## OptionalDeps:
+## Dependencies: Cecile_RecipeTooltip
+
+alchemy.lua
