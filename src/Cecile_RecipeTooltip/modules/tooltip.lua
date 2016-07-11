@@ -133,11 +133,15 @@ end
 
 function mod:HandleItem(tooltip, item)
 
-  local id = self.database.GetItemID(item);
-  local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
+  if item then
 
-  if class == select(7, _G.GetAuctionItemClasses()) then
-    self:HandleRecipe(tooltip,link,subclass);
+    local id = self.database.GetItemID(item);
+    local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
+
+    if class == select(7, _G.GetAuctionItemClasses()) then
+      self:HandleRecipe(tooltip,link,subclass);
+    end
+
   end
 
 end
