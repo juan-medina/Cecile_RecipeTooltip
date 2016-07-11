@@ -18,3 +18,7 @@ end
 L["TOOLTIP_MODULE"] = "Descripción emergente";
 L["TOOLTIP_MODULE_ENABLE"] = "Cambiar descripción emergente";
 L["TOOLTIP_MODULE_ENABLE_DESC"] = "Crea una descripción emergente adjunta con los detalles del objeto";
+L["TOOLTIP_CUSTOMIZE"] = "Personalizar descripción emergente";
+L["TOOLTIP_CUSTOMIZE_DESC"] = "Activar para personalizar la descripción emergente";
+L["TOOLTIP_COLOR"] = "Color de la descripción emergente";
+L["TOOLTIP_COLOR_DESC"] = "Cambia el color de la descripción emergente";
