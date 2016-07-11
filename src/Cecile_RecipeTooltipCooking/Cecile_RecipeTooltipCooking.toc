@@ -2,7 +2,7 @@
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rCooking
 ## Notes: Cooking module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Author: Cecile
-## Version: 1.0.0.beta
+## Version: 1.0.1.beta
 ## OptionalDeps:
 ## Dependencies: Cecile_RecipeTooltip
 

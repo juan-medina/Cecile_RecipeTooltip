@@ -1,2 +1,5 @@
+v1.0.1
+- Fix an issue reported by Galithiel
+- Add a new feature to customize the tooltip requested by baghwan
 v1.0.0
 - First beta
