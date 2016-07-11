@@ -15,6 +15,13 @@ local debug = Engine.AddOn:GetModule("debug");
 mod.Defaults = {
   profile = {
     enabled = true,
+    customizeTooltip = false,
+    color = {
+      r = 1,
+      g = 1,
+      b = 1,
+      a = 1,
+    },
   },
 };
 
@@ -25,7 +32,7 @@ mod.Options = {
   name = L["TOOLTIP_MODULE"],
   cmdInline = true,
   args = {
-    debug = {
+    enableCheck = {
       order = 1,
       type = "toggle",
       name = L["TOOLTIP_MODULE_ENABLE"],
@@ -45,23 +52,72 @@ mod.Options = {
 
       end,
     },
+    customizeTooltip = {
+      order = 2,
+      type = "toggle",
+      name = L["TOOLTIP_CUSTOMIZE"],
+      desc = L["TOOLTIP_CUSTOMIZE_DESC"],
+      get = function()
+        return mod.customizeTooltip;
+      end,
+
+      set = function( _ , value )
+
+        Engine.Profile.tooltip.customizeTooltip = value;
+
+        Engine.AddOn:OnCfgChange();
+
+      end,
+
+    },
+    color = {
+      order = 3,
+      type = "color",
+      hasAlpha = true,
+      name = L["TOOLTIP_COLOR"],
+      desc = L["TOOLTIP_COLOR_DESC"],
+      disabled = function()
+        return not mod.customizeTooltip;
+      end,
+      get = function()
+        return mod.color.r, mod.color.g, mod.color.b, mod.color.a;
+      end,
+
+      set = function( _ , r, g, b, a)
+
+        Engine.Profile.tooltip.color.r = r;
+        Engine.Profile.tooltip.color.g = g;
+        Engine.Profile.tooltip.color.b = b;
+        Engine.Profile.tooltip.color.a = a;
+
+        Engine.AddOn:OnCfgChange();
+
+      end,
+
+    },
   }
 
 };
 
-function mod.LoadProfileSettings()
+function mod:LoadProfileSettings()
 
   debug("Tooltip module LoadProfileSettings");
 
   if not Engine.Profile.tooltip.enabled then
-    mod:Disable();
+    self:Disable();
   end
+
+  self.customizeTooltip = Engine.Profile.tooltip.customizeTooltip;
+  self.color = Engine.Profile.tooltip.color;
 
 end
 
 function mod:SaveProfileSettings()
 
   Engine.Profile.tooltip.enabled = self:IsEnabled();
+
+  Engine.Profile.tooltip.customizeTooltip = self.customizeTooltip;
+  Engine.Profile.tooltip.color = self.color;
 
 end
 
@@ -122,6 +178,13 @@ function mod:HandleRecipe(tooltip, recipe, subclass)
       end
 
       _G.ItemRefTooltip:SetHyperlink(link);
+
+      if(mod.customizeTooltip) then
+        local red, green, blue, alpha = _G.ItemRefTooltip:GetBackdropBorderColor();
+        _G.ItemRefTooltip.savedBackdropBorderColor = { r = red, g = green, b = blue, a = alpha };
+        _G.ItemRefTooltip:SetBackdropBorderColor(mod.color.r,mod.color.g,mod.color.b,mod.color.a);
+      end
+
       _G.ItemRefTooltip:Show();
 
     end
@@ -133,11 +196,15 @@ end
 
 function mod:HandleItem(tooltip, item)
 
-  local id = self.database.GetItemID(item);
-  local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
+  if item then
 
-  if class == select(7, _G.GetAuctionItemClasses()) then
-    self:HandleRecipe(tooltip,link,subclass);
+    local id = self.database.GetItemID(item);
+    local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
+
+    if class == select(7, _G.GetAuctionItemClasses()) then
+      self:HandleRecipe(tooltip,link,subclass);
+    end
+
   end
 
 end
@@ -216,6 +283,16 @@ function mod.GameTooltip_OnHide()
 
   if _G.ItemRefTooltip:IsShown() then
 
+    if _G.ItemRefTooltip.savedBackdropBorderColor then
+
+      _G.ItemRefTooltip:SetBackdropBorderColor( _G.ItemRefTooltip.savedBackdropBorderColor.r,
+                                                _G.ItemRefTooltip.savedBackdropBorderColor.g,
+                                                _G.ItemRefTooltip.savedBackdropBorderColor.b,
+                                                _G.ItemRefTooltip.savedBackdropBorderColor.a );
+
+      _G.ItemRefTooltip.savedBackdropBorderColor = nil;
+    end
+
     _G.ItemRefCloseButton:Show();
     _G.ItemRefTooltip:Hide();
   end
@@ -273,5 +350,6 @@ function mod:OnInitialize()
   self.database = Engine.AddOn:GetModule("database");
 
 end
+
 
 
