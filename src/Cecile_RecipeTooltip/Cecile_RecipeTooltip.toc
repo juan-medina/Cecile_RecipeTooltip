@@ -2,7 +2,7 @@
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Notes: Improve Recipes Tooltips
 ## Author: Cecile
-## Version: 1.0.1.beta
+## Version: 1.0.2.beta
 ## SavedVariables: Cecile_RecipeTooltipDB
 ## OptionalDeps:
 ## X-Icon: Interface\AddOns\Cecile_RecipeTooltip\media\icons\minimap
