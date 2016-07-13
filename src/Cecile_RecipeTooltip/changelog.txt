@@ -1,3 +1,6 @@
+v1.0.2
+- Fix another issue reported by Galithiel
+- Add a better error handling to avoid more issues
 v1.0.1
 - Fix an issue reported by Galithiel
 - Add a new feature to customize the tooltip requested by baghwan

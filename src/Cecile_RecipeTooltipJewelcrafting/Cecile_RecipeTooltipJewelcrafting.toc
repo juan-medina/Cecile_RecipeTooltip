@@ -2,7 +2,7 @@
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rJewelcrafting
 ## Notes: Jewelcrafting module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Author: Cecile
-## Version: 1.0.1.beta
+## Version: 1.0.2.beta
 ## OptionalDeps:
 ## Dependencies: Cecile_RecipeTooltip
 

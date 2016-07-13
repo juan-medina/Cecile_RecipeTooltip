@@ -196,13 +196,32 @@ end
 
 function mod:HandleItem(tooltip, item)
 
+  local ok,errorText = pcall(self.uHandleItem,self,tooltip,item);
+
+  if not ok then
+    debug("Error on handle item: "..errorText);
+  end
+
+end
+
+function mod:uHandleItem(tooltip, item)
+
   if item then
 
     local id = self.database.GetItemID(item);
-    local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
 
-    if class == select(7, _G.GetAuctionItemClasses()) then
-      self:HandleRecipe(tooltip,link,subclass);
+    if id then
+
+      local _, link, _, _, _, class, subclass = _G.GetItemInfo(id);
+
+      if link then
+
+        if class == select(7, _G.GetAuctionItemClasses()) then
+          self:HandleRecipe(tooltip,link,subclass);
+        end
+
+      end
+
     end
 
   end
@@ -286,9 +305,9 @@ function mod.GameTooltip_OnHide()
     if _G.ItemRefTooltip.savedBackdropBorderColor then
 
       _G.ItemRefTooltip:SetBackdropBorderColor( _G.ItemRefTooltip.savedBackdropBorderColor.r,
-                                                _G.ItemRefTooltip.savedBackdropBorderColor.g,
-                                                _G.ItemRefTooltip.savedBackdropBorderColor.b,
-                                                _G.ItemRefTooltip.savedBackdropBorderColor.a );
+        _G.ItemRefTooltip.savedBackdropBorderColor.g,
+        _G.ItemRefTooltip.savedBackdropBorderColor.b,
+        _G.ItemRefTooltip.savedBackdropBorderColor.a );
 
       _G.ItemRefTooltip.savedBackdropBorderColor = nil;
     end
@@ -350,6 +369,7 @@ function mod:OnInitialize()
   self.database = Engine.AddOn:GetModule("database");
 
 end
+
 
 
 
