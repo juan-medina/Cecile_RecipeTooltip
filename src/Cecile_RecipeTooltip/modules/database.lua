@@ -11,6 +11,9 @@ local L=Engine.Locale;
 --debug
 local debug = Engine.AddOn:GetModule("debug");
 
+--version
+local Version = Engine.AddOn:GetModule("version");
+
 --module defaults
 mod.Defaults = {
   profile = {
@@ -134,9 +137,35 @@ function mod.OnEnable()
 
 end
 
+function mod.GetSubClassName(index)
+  local name;
+
+  if Version.Legion then
+      local subIndex = select(index,_G.GetAuctionItemSubClasses(_G.LE_ITEM_CLASS_RECIPE));
+      name = _G.GetItemSubClassInfo(_G.LE_ITEM_CLASS_RECIPE,subIndex);
+  else
+      name = select(index,_G.GetAuctionItemSubClasses(7));
+  end
+
+  return name;
+end
+
+function mod.GetRecipeClassName()
+  local name;
+
+  if Version.Legion then
+      name = _G.GetItemClassInfo(_G.LE_ITEM_CLASS_RECIPE);
+  else
+      name = select(7, _G.GetAuctionItemClasses())
+  end
+
+  return name;
+end
+
 function mod:CreateModule(index)
 
-  local name = select(index,_G.GetAuctionItemSubClasses(7));
+  local name = mod.GetSubClassName(index);
+
   local module = self:NewModule(name);
 
   module.name = name;
