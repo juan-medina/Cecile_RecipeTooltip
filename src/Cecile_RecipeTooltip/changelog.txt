@@ -1,3 +1,5 @@
+v1.1.0
+- Update for 7.0
 v1.0.2
 - Fix another issue reported by Galithiel
 - Add a better error handling to avoid more issues
