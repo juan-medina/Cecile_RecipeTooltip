@@ -216,7 +216,7 @@ function mod:uHandleItem(tooltip, item)
 
       if link then
 
-        if class == select(7, _G.GetAuctionItemClasses()) then
+        if class == self.database.GetRecipeClassName() then
           self:HandleRecipe(tooltip,link,subclass);
         end
 
