@@ -1,8 +1,8 @@
-## Interface: 70000
+## Interface: 70200
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rEngineering
 ## Notes: Engineering module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Author: Cecile
-## Version: 1.1.0.release
+## Version: 1.1.1.release
 ## OptionalDeps:
 ## Dependencies: Cecile_RecipeTooltip
 

@@ -8,7 +8,7 @@ local Engine = _G.Cecile_RecipeTooltip;
 local database = Engine.AddOn:GetModule("database");
 
 --jewelcrafting
-local PROFESSION_INDEX = 11;
+local PROFESSION_INDEX = 7;
 
 local mod = database:CreateModule(PROFESSION_INDEX);
 
@@ -16,7 +16,9 @@ function mod.LoadRecipes()
 
   --Vanilla
 
+
   --BC
+
   mod.recipes[35708]=35707;
   mod.recipes[21944]=21763;
   mod.recipes[35239]=32215;
@@ -227,6 +229,7 @@ function mod.LoadRecipes()
   mod.recipes[35767]=35760;
 
   --Woltk
+
   mod.recipes[41789]=40037;
   mod.recipes[41788]=41389;
   mod.recipes[41784]=40022;
@@ -387,6 +390,7 @@ function mod.LoadRecipes()
   mod.recipes[41688]=40049;
 
   --Cataclysm
+
   mod.recipes[71919]=71854;
   mod.recipes[71918]=71853;
   mod.recipes[71917]=71852;
@@ -573,6 +577,7 @@ function mod.LoadRecipes()
   mod.recipes[52458]=52268;
 
   --Pandaria
+
   mod.recipes[83877]=82453;
   mod.recipes[83872]=76893;
   mod.recipes[83931]=83087;
@@ -598,6 +603,7 @@ function mod.LoadRecipes()
   mod.recipes[83925]=76886;
 
   --WoD
+
   mod.recipes[116088]=115994;
   mod.recipes[116089]=115995;
   mod.recipes[116086]=115992;
@@ -632,6 +638,9 @@ function mod.LoadRecipes()
   mod.recipes[116092]=115798;
 
   --Legion
+
+  mod.recipes[141312]=130172;
+  mod.recipes[141311]=130172;
   mod.recipes[137849]=130235;
   mod.recipes[137848]=130234;
   mod.recipes[137847]=130233;
@@ -722,6 +731,3 @@ function mod.LoadRecipes()
   mod.recipes[137859]=136711;
 
 end
-
-
-

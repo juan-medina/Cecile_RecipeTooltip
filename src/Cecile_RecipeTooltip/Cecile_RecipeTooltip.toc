@@ -1,8 +1,8 @@
-## Interface: 70000
+## Interface: 70200
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Notes: Improve Recipes Tooltips
 ## Author: Cecile
-## Version: 1.1.0.release
+## Version: 1.1.1.release
 ## SavedVariables: Cecile_RecipeTooltipDB
 ## OptionalDeps:
 ## X-Icon: Interface\AddOns\Cecile_RecipeTooltip\media\icons\minimap

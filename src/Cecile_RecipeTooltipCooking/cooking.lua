@@ -8,13 +8,14 @@ local Engine = _G.Cecile_RecipeTooltip;
 local database = Engine.AddOn:GetModule("database");
 
 --cooking
-local PROFESSION_INDEX = 6;
+local PROFESSION_INDEX = 9;
 
 local mod = database:CreateModule(PROFESSION_INDEX);
 
 function mod.LoadRecipes()
 
   --Vanilla
+
   mod.recipes[2889]=2888;
   mod.recipes[21025]=21023;
   mod.recipes[16767]=16766;
@@ -25,6 +26,7 @@ function mod.LoadRecipes()
   mod.recipes[3678]=3662;
   mod.recipes[3679]=3220;
   mod.recipes[13939]=6887;
+  mod.recipes[7678]=7676;
   mod.recipes[3737]=3729;
   mod.recipes[3736]=3728;
   mod.recipes[3735]=3727;
@@ -85,6 +87,7 @@ function mod.LoadRecipes()
   mod.recipes[12229]=13851;
 
   --BC
+
   mod.recipes[27686]=24105;
   mod.recipes[34413]=34411;
   mod.recipes[27700]=27667;
@@ -117,6 +120,7 @@ function mod.LoadRecipes()
   mod.recipes[27698]=27665;
 
   --Woltk
+
   mod.recipes[34126]=34125;
   mod.recipes[39692]=39691;
   mod.recipes[46803]=44837;
@@ -161,6 +165,7 @@ function mod.LoadRecipes()
   mod.recipes[43025]=34768;
 
   --Cataclysm
+
   mod.recipes[65415]=62674;
   mod.recipes[65414]=62675;
   mod.recipes[65413]=62652;
@@ -194,6 +199,7 @@ function mod.LoadRecipes()
   mod.recipes[65409]=62663;
 
   --Pandaria
+
   mod.recipes[86393]=87264;
   mod.recipes[87266]=86432;
   mod.recipes[75013]=74919;
@@ -210,6 +216,7 @@ function mod.LoadRecipes()
   mod.recipes[101768]=101747;
 
   --WoD
+
   mod.recipes[122557]=122346;
   mod.recipes[122556]=122348;
   mod.recipes[122555]=122343;
@@ -242,12 +249,13 @@ function mod.LoadRecipes()
   mod.recipes[118317]=111441;
 
   --Legion
+
   mod.recipes[133862]=133571;
   mod.recipes[133865]=133574;
   mod.recipes[133864]=133573;
   mod.recipes[133854]=133563;
   mod.recipes[133855]=133564;
-  mod.recipes[133856]=133565;
+  mod.recipes[133842]=133571;
   mod.recipes[133857]=133566;
   mod.recipes[133850]=133579;
   mod.recipes[133851]=133557;
@@ -255,6 +263,7 @@ function mod.LoadRecipes()
   mod.recipes[133853]=133562;
   mod.recipes[133858]=133567;
   mod.recipes[133859]=133568;
+  mod.recipes[133856]=133565;
   mod.recipes[133810]=133557;
   mod.recipes[133837]=133566;
   mod.recipes[133812]=133561;
@@ -270,12 +279,13 @@ function mod.LoadRecipes()
   mod.recipes[133838]=133567;
   mod.recipes[133839]=133568;
   mod.recipes[133869]=133578;
+  mod.recipes[142331]=142334;
   mod.recipes[129180]=129179;
   mod.recipes[133836]=133565;
   mod.recipes[133868]=133577;
   mod.recipes[133834]=133563;
   mod.recipes[133843]=133572;
-  mod.recipes[133842]=133571;
+  mod.recipes[133833]=133562;
   mod.recipes[133841]=133570;
   mod.recipes[133835]=133564;
   mod.recipes[133847]=133576;
@@ -285,11 +295,12 @@ function mod.LoadRecipes()
   mod.recipes[133832]=133561;
   mod.recipes[133849]=133578;
   mod.recipes[133848]=133577;
-  mod.recipes[133833]=133562;
+  mod.recipes[133820]=133569;
   mod.recipes[133825]=133574;
   mod.recipes[133824]=133573;
   mod.recipes[133827]=133576;
   mod.recipes[133826]=133575;
+  mod.recipes[133821]=133570;
   mod.recipes[133830]=133579;
   mod.recipes[133823]=133572;
   mod.recipes[133822]=133571;
@@ -304,9 +315,5 @@ function mod.LoadRecipes()
   mod.recipes[133872]=133681;
   mod.recipes[133840]=133569;
   mod.recipes[133873]=133681;
-  mod.recipes[133820]=133569;
 
 end
-
-
-
