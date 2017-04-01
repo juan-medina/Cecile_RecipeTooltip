@@ -1,0 +1,9 @@
+## Interface: 70200
+## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rFirstAid
+## Notes: First-Aid module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
+## Author: Cecile
+## Version: 1.1.1.release
+## OptionalDeps:
+## Dependencies: Cecile_RecipeTooltip
+
+firstaid.lua

@@ -39,6 +39,14 @@ mod.Options = {
 };
 
 function mod:BuildStats()
+
+  -- local SubClasses = {_G.GetAuctionItemSubClasses(_G.LE_ITEM_CLASS_RECIPE)};
+
+  -- for _,v in ipairs(SubClasses) do
+  --   local name = mod.GetSubClassName(v+1);
+  --   print("profesion "..name.."="..v);
+  -- end
+
   local stats = "";
 
   local total = 0;
@@ -75,9 +83,9 @@ function mod.SaveProfileSettings()
 
 end
 
-function mod:OnProfileChanged()
+function mod.OnProfileChanged()
 
-  self:LoadProfileSettings();
+  mod.LoadProfileSettings();
 
 end
 
@@ -116,7 +124,6 @@ function mod:Search(recipeType, recipe)
   return item;
 end
 
-
 function mod:OnInitialize()
 
   debug("Database module Initialize");
@@ -138,33 +145,26 @@ function mod.OnEnable()
 end
 
 function mod.GetSubClassName(index)
-  local name;
 
-  if Version.Legion then
-      local subIndex = select(index,_G.GetAuctionItemSubClasses(_G.LE_ITEM_CLASS_RECIPE));
-      name = _G.GetItemSubClassInfo(_G.LE_ITEM_CLASS_RECIPE,subIndex);
-  else
-      name = select(index,_G.GetAuctionItemSubClasses(7));
-  end
+  local subIndex = select(index,_G.GetAuctionItemSubClasses(_G.LE_ITEM_CLASS_RECIPE));
+  local name = _G.GetItemSubClassInfo(_G.LE_ITEM_CLASS_RECIPE,subIndex);
 
   return name;
 end
 
 function mod.GetRecipeClassName()
-  local name;
-
-  if Version.Legion then
-      name = _G.GetItemClassInfo(_G.LE_ITEM_CLASS_RECIPE);
-  else
-      name = select(7, _G.GetAuctionItemClasses())
-  end
+  local name = _G.GetItemClassInfo(_G.LE_ITEM_CLASS_RECIPE);
 
   return name;
 end
 
 function mod:CreateModule(index)
 
-  local name = mod.GetSubClassName(index);
+  local shiftIndex = index + 1;
+
+  local name = mod.GetSubClassName(shiftIndex);
+
+  debug("CreateModule "..name.."="..index);
 
   local module = self:NewModule(name);
 

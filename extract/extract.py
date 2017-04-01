@@ -16,17 +16,17 @@ from wowhead import WowheadScrapper
 
 professions = {}
 
-professions["books"] = 1
-professions["leatherworking"] = 2
-professions["tailoring"] = 3
-professions["engineering"] = 4
-professions["blacksmithing"] = 5
-professions["cooking"] = 6
-professions["alchemy"] = 7
-professions["first-aid"] = 8
-professions["enchanting"] = 9
-professions["jewelcrafting"] = 11
-professions["inscription"] = 12
+professions["books"] = 0
+professions["leatherworking"] = 1
+professions["tailoring"] = 2
+professions["engineering"] = 3
+professions["blacksmithing"] = 4
+professions["cooking"] = 9
+professions["alchemy"] = 5
+professions["first-aid"] = 10
+professions["enchanting"] = 6
+professions["jewelcrafting"] = 7
+professions["inscription"] = 8
 
 expansions = {}
 expansions[1] = "Vanilla"
@@ -62,7 +62,7 @@ def GetRecipesExpansion(name, expansion):
         cont = cont + 1
         if not (percent == previous_percent):
             previous_percent = percent
-            log.info("progress %d%%", percent)
+            log.info("%s : %s progress %d%%", name, expansions[expansion], percent)
 
         if not (id is None):
             complete[recipe] = id
@@ -70,6 +70,9 @@ def GetRecipesExpansion(name, expansion):
             incomplete[recipe] = id
 
     return complete
+
+def GetFileName(name):
+    return name.replace("-","").lower()+".lua"
 
 
 def GetRecipes(name):
@@ -82,22 +85,44 @@ def GetRecipes(name):
         expansion_recipes = GetRecipesExpansion(name, expansion)
         total_data[expansion] = {'name': expansions[expansion],
                                  'recipes': expansion_recipes}
+    fileName = GetFileName(name)
 
-    print(' ')
-    print('--' + name)
-    print('local PROFESSION_INDEX = ' + str(professions[name]) + ';')
-    print(' ')
+    log.info("Writing: %s", fileName)
+
+    fileOutput = open(fileName, 'w')
+
+    fileOutput.write('----------------------------------------------------------------------------------------------------'+"\n")
+    fileOutput.write('-- ' + name + ' module'+"\n")
+    fileOutput.write('\n')
+    fileOutput.write('--get the engine and create the module'+"\n")
+    fileOutput.write('local Engine = _G.Cecile_RecipeTooltip;'+"\n")
+    fileOutput.write('\n')
+    fileOutput.write('--get the database'+"\n")
+    fileOutput.write('local database = Engine.AddOn:GetModule("database");'+"\n")
+    fileOutput.write('\n')
+    fileOutput.write('--' + name +"\n")
+    fileOutput.write('local PROFESSION_INDEX = '+ str(professions[name]) +';'+"\n")
+    fileOutput.write('\n')
+    fileOutput.write('local mod = database:CreateModule(PROFESSION_INDEX);'+"\n")
+    fileOutput.write('\n')
+    fileOutput.write('function mod.LoadRecipes()'+"\n")
+    fileOutput.write('\n')
 
     for expansion in expansions.keys():
 
-        print("--" + total_data[expansion]['name'])
+        fileOutput.write("  --" + total_data[expansion]['name']+"\n"+"\n")
         recipes = total_data[expansion]['recipes']
 
         for recipe in recipes.keys():
-            print('mod.recipes[{0}]={1};'.format(
-                recipe, recipes[recipe]))
+            fileOutput.write('  mod.recipes[{0}]={1};'.format(
+                recipe, recipes[recipe])+"\n")
 
-        print(' ')
+        fileOutput.write('\n')
+
+    fileOutput.write('end')
+    fileOutput.write('\n')
+
+    fileOutput.close()
 
 if __name__ == '__main__':
 
@@ -110,7 +135,8 @@ if __name__ == '__main__':
 
         log.info("start to extract data")
 
-        GetRecipes("inscription")
+        for profession in professions:
+            GetRecipes(profession)
 
     except Exception as ex:
         logging.error(ex, exc_info=True)

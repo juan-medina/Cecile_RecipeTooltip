@@ -99,16 +99,16 @@ mod.Options = {
 
 };
 
-function mod:LoadProfileSettings()
+function mod.LoadProfileSettings()
 
   debug("Tooltip module LoadProfileSettings");
 
   if not Engine.Profile.tooltip.enabled then
-    self:Disable();
+    mod:Disable();
   end
 
-  self.customizeTooltip = Engine.Profile.tooltip.customizeTooltip;
-  self.color = Engine.Profile.tooltip.color;
+  mod.customizeTooltip = Engine.Profile.tooltip.customizeTooltip;
+  mod.color = Engine.Profile.tooltip.color;
 
 end
 
@@ -121,9 +121,9 @@ function mod:SaveProfileSettings()
 
 end
 
-function mod:OnProfileChanged()
+function mod.OnProfileChanged()
 
-  self:LoadProfileSettings();
+  mod.LoadProfileSettings();
 
 end
 
