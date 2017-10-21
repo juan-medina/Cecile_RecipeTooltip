@@ -94,8 +94,8 @@ function mod.LoadRecipes()
   mod.recipes[7090]=7065;
   mod.recipes[7091]=7049;
   mod.recipes[4350]=4321;
-  mod.recipes[21723]=21542;
-  mod.recipes[21722]=21154;
+  mod.recipes[21723]=151772;
+  mod.recipes[21722]=151771;
   mod.recipes[4351]=4323;
   mod.recipes[19766]=19684;
   mod.recipes[22307]=22246;
@@ -213,7 +213,7 @@ function mod.LoadRecipes()
   mod.recipes[24306]=24259;
   mod.recipes[24307]=24260;
   mod.recipes[38328]=38278;
-  mod.recipes[34261]=34087;
+  mod.recipes[34261]=151792;
   mod.recipes[21892]=21842;
   mod.recipes[30842]=30837;
   mod.recipes[38327]=38277;
@@ -221,7 +221,7 @@ function mod.LoadRecipes()
   mod.recipes[21896]=21854;
   mod.recipes[32439]=32389;
   mod.recipes[32438]=32392;
-  mod.recipes[34319]=34085;
+  mod.recipes[34319]=151790;
   mod.recipes[38229]=38225;
 
   --Woltk
@@ -234,8 +234,8 @@ function mod.LoadRecipes()
   mod.recipes[49954]=49890;
   mod.recipes[49955]=49892;
   mod.recipes[49956]=49893;
-  mod.recipes[44917]=21542;
-  mod.recipes[44916]=21154;
+  mod.recipes[44917]=151772;
+  mod.recipes[44916]=151771;
   mod.recipes[42188]=41604;
   mod.recipes[42187]=41602;
   mod.recipes[42184]=41600;
@@ -379,6 +379,7 @@ function mod.LoadRecipes()
   mod.recipes[138000]=127033;
   mod.recipes[138001]=127033;
   mod.recipes[127280]=127034;
+  mod.recipes[151748]=151571;
   mod.recipes[137966]=127001;
   mod.recipes[137967]=127000;
   mod.recipes[142076]=142075;
@@ -387,6 +388,8 @@ function mod.LoadRecipes()
   mod.recipes[137681]=139503;
   mod.recipes[137979]=126996;
   mod.recipes[137969]=126998;
+  mod.recipes[151746]=151571;
+  mod.recipes[151747]=151571;
   mod.recipes[138015]=126991;
   mod.recipes[138017]=137557;
   mod.recipes[138011]=127035;
