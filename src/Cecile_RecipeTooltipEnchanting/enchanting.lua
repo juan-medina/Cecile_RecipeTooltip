@@ -58,6 +58,7 @@ function mod.LoadRecipes()
   mod.recipes[138882]=138795;
   mod.recipes[136702]=136689;
   mod.recipes[140634]=124440;
+  mod.recipes[152658]=124441;
   mod.recipes[136704]=136691;
 
 end

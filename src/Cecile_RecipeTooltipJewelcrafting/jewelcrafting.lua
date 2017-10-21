@@ -418,7 +418,6 @@ function mod.LoadRecipes()
   mod.recipes[71902]=71837;
   mod.recipes[71903]=71838;
   mod.recipes[71904]=71839;
-  mod.recipes[71905]=71840;
   mod.recipes[71906]=71841;
   mod.recipes[71907]=71842;
   mod.recipes[52389]=52230;
@@ -639,8 +638,8 @@ function mod.LoadRecipes()
 
   --Legion
 
-  mod.recipes[141312]=130172;
-  mod.recipes[141311]=130172;
+  mod.recipes[141312]=123919;
+  mod.recipes[141311]=123918;
   mod.recipes[137849]=130235;
   mod.recipes[137848]=130234;
   mod.recipes[137847]=130233;
@@ -677,7 +676,6 @@ function mod.LoadRecipes()
   mod.recipes[137814]=130246;
   mod.recipes[137815]=130247;
   mod.recipes[137816]=130248;
-  mod.recipes[137817]=130223;
   mod.recipes[137810]=130242;
   mod.recipes[137811]=130243;
   mod.recipes[137812]=130244;
@@ -703,6 +701,12 @@ function mod.LoadRecipes()
   mod.recipes[138451]=130215;
   mod.recipes[138453]=130218;
   mod.recipes[138452]=130216;
+  mod.recipes[151728]=151588;
+  mod.recipes[151729]=151588;
+  mod.recipes[151726]=151587;
+  mod.recipes[151727]=151588;
+  mod.recipes[151724]=151587;
+  mod.recipes[151725]=151587;
   mod.recipes[137799]=130230;
   mod.recipes[137798]=130229;
   mod.recipes[137793]=130224;
@@ -711,6 +715,16 @@ function mod.LoadRecipes()
   mod.recipes[137796]=130227;
   mod.recipes[137795]=130226;
   mod.recipes[137794]=130225;
+  mod.recipes[151739]=151585;
+  mod.recipes[151738]=151584;
+  mod.recipes[151735]=151590;
+  mod.recipes[151734]=151590;
+  mod.recipes[151737]=151583;
+  mod.recipes[151736]=151580;
+  mod.recipes[151731]=151589;
+  mod.recipes[151730]=151589;
+  mod.recipes[151733]=151590;
+  mod.recipes[151732]=151589;
   mod.recipes[137865]=136711;
   mod.recipes[137864]=136713;
   mod.recipes[137867]=136713;

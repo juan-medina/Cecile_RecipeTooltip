@@ -407,11 +407,13 @@ function mod.LoadRecipes()
   mod.recipes[116732]=116646;
   mod.recipes[116733]=116647;
   mod.recipes[116738]=114237;
+  mod.recipes[116739]=114232;
   mod.recipes[119329]=119328;
   mod.recipes[122705]=108257;
   mod.recipes[118044]=116428;
   mod.recipes[127725]=127713;
   mod.recipes[116727]=116427;
+  mod.recipes[116726]=116426;
   mod.recipes[127727]=127714;
   mod.recipes[116729]=116453;
   mod.recipes[116728]=116425;
@@ -438,6 +440,9 @@ function mod.LoadRecipes()
   mod.recipes[123920]=123917;
   mod.recipes[123923]=123914;
   mod.recipes[123922]=123915;
+  mod.recipes[151713]=151576;
+  mod.recipes[151712]=151576;
+  mod.recipes[151711]=151576;
   mod.recipes[124462]=124461;
   mod.recipes[142286]=30089;
   mod.recipes[137607]=123894;
@@ -478,6 +483,8 @@ function mod.LoadRecipes()
   mod.recipes[136709]=136708;
   mod.recipes[136697]=136684;
   mod.recipes[136696]=136683;
+  mod.recipes[151709]=151239;
+  mod.recipes[142346]=12769;
   mod.recipes[142383]=12802;
   mod.recipes[142283]=30088;
   mod.recipes[123906]=123891;

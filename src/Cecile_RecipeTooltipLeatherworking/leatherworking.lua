@@ -97,6 +97,7 @@ function mod.LoadRecipes()
   mod.recipes[19771]=19687;
   mod.recipes[19770]=19686;
   mod.recipes[19773]=19689;
+  mod.recipes[19772]=19688;
   mod.recipes[5973]=5963;
   mod.recipes[5972]=5958;
   mod.recipes[5974]=5965;
@@ -146,7 +147,6 @@ function mod.LoadRecipes()
   mod.recipes[8405]=8214;
   mod.recipes[8406]=8213;
   mod.recipes[8407]=8212;
-  mod.recipes[21548]=21278;
   mod.recipes[20253]=15064;
   mod.recipes[20254]=15065;
   mod.recipes[8398]=8204;
@@ -254,7 +254,6 @@ function mod.LoadRecipes()
   mod.recipes[34172]=29530;
   mod.recipes[34173]=29530;
   mod.recipes[34174]=29531;
-  mod.recipes[34175]=29531;
   mod.recipes[25722]=25652;
   mod.recipes[29718]=29530;
   mod.recipes[29719]=29533;
@@ -274,7 +273,7 @@ function mod.LoadRecipes()
   mod.recipes[35303]=29506;
   mod.recipes[35300]=29509;
   mod.recipes[35301]=29511;
-  mod.recipes[34262]=34086;
+  mod.recipes[34262]=151791;
   mod.recipes[29664]=29540;
 
   --Woltk
@@ -388,7 +387,6 @@ function mod.LoadRecipes()
   mod.recipes[70175]=70137;
   mod.recipes[67074]=75099;
   mod.recipes[67068]=56536;
-  mod.recipes[72030]=8206;
   mod.recipes[72033]=8208;
   mod.recipes[67048]=75104;
   mod.recipes[67049]=75094;
@@ -575,8 +573,10 @@ function mod.LoadRecipes()
   mod.recipes[140645]=128906;
   mod.recipes[140644]=128907;
   mod.recipes[137952]=131746;
+  mod.recipes[151744]=151578;
   mod.recipes[137889]=128886;
   mod.recipes[137888]=128887;
+  mod.recipes[151745]=151578;
   mod.recipes[137883]=128876;
   mod.recipes[137882]=128881;
   mod.recipes[137881]=128882;
@@ -585,10 +585,14 @@ function mod.LoadRecipes()
   mod.recipes[137886]=128889;
   mod.recipes[137885]=128890;
   mod.recipes[137884]=128891;
+  mod.recipes[151740]=151577;
+  mod.recipes[151741]=151577;
+  mod.recipes[151742]=151577;
   mod.recipes[140638]=128889;
   mod.recipes[140639]=128888;
   mod.recipes[140636]=128891;
   mod.recipes[140637]=128890;
+  mod.recipes[151743]=151578;
   mod.recipes[142409]=142406;
   mod.recipes[142408]=142406;
   mod.recipes[142407]=142406;

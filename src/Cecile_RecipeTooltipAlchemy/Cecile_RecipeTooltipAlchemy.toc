@@ -1,8 +1,8 @@
-## Interface: 70200
+## Interface: 70300
 ## Title: |cffffffffCecile|r_|cfffff569RecipeTooltip|rAlchemy
 ## Notes: Alchemy module for |cffffffffCecile|r_|cfffff569RecipeTooltip|r
 ## Author: Cecile
-## Version: 1.1.1.release
+## Version: 1.1.2.release
 ## OptionalDeps:
 ## Dependencies: Cecile_RecipeTooltip
 

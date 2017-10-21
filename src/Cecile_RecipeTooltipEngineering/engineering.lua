@@ -205,6 +205,7 @@ function mod.LoadRecipes()
   mod.recipes[137714]=132503;
   mod.recipes[137719]=132509;
   mod.recipes[137718]=132507;
+  mod.recipes[151717]=151652;
   mod.recipes[137697]=132500;
   mod.recipes[137694]=132525;
   mod.recipes[137695]=132524;
@@ -237,6 +238,7 @@ function mod.LoadRecipes()
   mod.recipes[137727]=134125;
   mod.recipes[137724]=132515;
   mod.recipes[137725]=132982;
+  mod.recipes[151714]=151651;
   mod.recipes[133671]=132504;
   mod.recipes[136701]=136688;
   mod.recipes[136700]=136687;
