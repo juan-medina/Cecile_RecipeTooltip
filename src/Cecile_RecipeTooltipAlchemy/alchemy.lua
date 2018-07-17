@@ -23,6 +23,7 @@ function mod.LoadRecipes()
   mod.recipes[13520]=13511;
   mod.recipes[13521]=13512;
   mod.recipes[20014]=20004;
+  mod.recipes[6454]=6453;
   mod.recipes[6053]=6051;
   mod.recipes[9305]=6037;
   mod.recipes[9304]=3577;
@@ -36,6 +37,7 @@ function mod.LoadRecipes()
   mod.recipes[14634]=3829;
   mod.recipes[13478]=13445;
   mod.recipes[21547]=21546;
+  mod.recipes[13489]=12803;
   mod.recipes[13488]=7076;
   mod.recipes[3394]=3386;
   mod.recipes[4597]=4596;
@@ -50,6 +52,7 @@ function mod.LoadRecipes()
   mod.recipes[3830]=3825;
   mod.recipes[3831]=3826;
   mod.recipes[3832]=3828;
+  mod.recipes[19442]=19440;
   mod.recipes[10644]=9061;
   mod.recipes[12958]=12360;
   mod.recipes[2555]=2459;
@@ -149,6 +152,9 @@ function mod.LoadRecipes()
 
   --Cataclysm
 
+  mod.recipes[65435]=62288;
+  mod.recipes[67538]=65891;
+  mod.recipes[65498]=65460;
 
   --Pandaria
 
@@ -253,5 +259,55 @@ function mod.LoadRecipes()
   mod.recipes[152618]=152615;
   mod.recipes[128209]=141323;
   mod.recipes[127945]=127844;
+
+  --BfA
+
+  mod.recipes[162704]=152494;
+  mod.recipes[162705]=163082;
+  mod.recipes[162702]=152632;
+  mod.recipes[162703]=152495;
+  mod.recipes[162701]=152636;
+  mod.recipes[162520]=162519;
+  mod.recipes[162521]=162519;
+  mod.recipes[162697]=152640;
+  mod.recipes[162698]=152641;
+  mod.recipes[163315]=163222;
+  mod.recipes[162128]=152557;
+  mod.recipes[162258]=152497;
+  mod.recipes[162259]=152550;
+  mod.recipes[163318]=163225;
+  mod.recipes[163319]=163224;
+  mod.recipes[162691]=152557;
+  mod.recipes[162692]=152561;
+  mod.recipes[162693]=152560;
+  mod.recipes[162254]=152495;
+  mod.recipes[162255]=152494;
+  mod.recipes[162256]=163082;
+  mod.recipes[162257]=152496;
+  mod.recipes[163314]=163223;
+  mod.recipes[163316]=163222;
+  mod.recipes[160663]=109223;
+  mod.recipes[160662]=116979;
+  mod.recipes[160661]=116981;
+  mod.recipes[160664]=136653;
+  mod.recipes[163313]=163223;
+  mod.recipes[162695]=152638;
+  mod.recipes[163320]=163224;
+  mod.recipes[162773]=162519;
+  mod.recipes[162694]=152559;
+  mod.recipes[163317]=163225;
+  mod.recipes[162138]=152636;
+  mod.recipes[162135]=152641;
+  mod.recipes[162134]=152640;
+  mod.recipes[162137]=152637;
+  mod.recipes[162136]=152634;
+  mod.recipes[162131]=152559;
+  mod.recipes[162130]=152560;
+  mod.recipes[162133]=152639;
+  mod.recipes[162132]=152638;
+  mod.recipes[162696]=152639;
+  mod.recipes[162129]=152561;
+  mod.recipes[162139]=152632;
+  mod.recipes[162260]=152503;
 
 end

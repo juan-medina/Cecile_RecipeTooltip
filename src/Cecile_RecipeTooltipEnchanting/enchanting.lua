@@ -61,4 +61,11 @@ function mod.LoadRecipes()
   mod.recipes[152658]=124441;
   mod.recipes[136704]=136691;
 
+  --BfA
+
+  mod.recipes[162720]=152874;
+  mod.recipes[162308]=159922;
+  mod.recipes[162309]=159922;
+  mod.recipes[162306]=152874;
+
 end

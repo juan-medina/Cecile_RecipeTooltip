@@ -14,7 +14,7 @@ import logging
 
 class WowheadScrapper:
 
-    BASE_URL = "http://legion.wowhead.com/"
+    BASE_URL = "http://bfa.wowhead.com/"
     RECIPE_LIST_URL = "/items/recipes/{0}?filter=166;{1};0"
     ITEM_DETAIL_URL = "/item={0}"
 

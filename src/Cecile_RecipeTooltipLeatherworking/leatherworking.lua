@@ -147,6 +147,7 @@ function mod.LoadRecipes()
   mod.recipes[8405]=8214;
   mod.recipes[8406]=8213;
   mod.recipes[8407]=8212;
+  mod.recipes[21548]=21278;
   mod.recipes[20253]=15064;
   mod.recipes[20254]=15065;
   mod.recipes[8398]=8204;
@@ -254,6 +255,7 @@ function mod.LoadRecipes()
   mod.recipes[34172]=29530;
   mod.recipes[34173]=29530;
   mod.recipes[34174]=29531;
+  mod.recipes[34175]=29531;
   mod.recipes[25722]=25652;
   mod.recipes[29718]=29530;
   mod.recipes[29719]=29533;
@@ -387,6 +389,7 @@ function mod.LoadRecipes()
   mod.recipes[70175]=70137;
   mod.recipes[67074]=75099;
   mod.recipes[67068]=56536;
+  mod.recipes[72030]=8206;
   mod.recipes[72033]=8208;
   mod.recipes[67048]=75104;
   mod.recipes[67049]=75094;
@@ -629,5 +632,48 @@ function mod.LoadRecipes()
   mod.recipes[137914]=128897;
   mod.recipes[137917]=128906;
   mod.recipes[137916]=128907;
+
+  --BfA
+
+  mod.recipes[162388]=162468;
+  mod.recipes[162389]=162470;
+  mod.recipes[162766]=154159;
+  mod.recipes[162418]=159896;
+  mod.recipes[162409]=159892;
+  mod.recipes[162414]=154163;
+  mod.recipes[162412]=154159;
+  mod.recipes[162413]=154162;
+  mod.recipes[162410]=159893;
+  mod.recipes[162408]=159892;
+  mod.recipes[162399]=159888;
+  mod.recipes[162398]=159888;
+  mod.recipes[162391]=159884;
+  mod.recipes[162390]=159884;
+  mod.recipes[162393]=159885;
+  mod.recipes[162392]=159885;
+  mod.recipes[162395]=159886;
+  mod.recipes[162394]=159886;
+  mod.recipes[162397]=159887;
+  mod.recipes[162499]=162493;
+  mod.recipes[162417]=159896;
+  mod.recipes[162396]=159887;
+  mod.recipes[162411]=159893;
+  mod.recipes[162768]=154163;
+  mod.recipes[162504]=162472;
+  mod.recipes[162505]=162490;
+  mod.recipes[162506]=162474;
+  mod.recipes[162767]=154162;
+  mod.recipes[162500]=162468;
+  mod.recipes[162501]=162494;
+  mod.recipes[162502]=162470;
+  mod.recipes[162503]=162489;
+  mod.recipes[162405]=159890;
+  mod.recipes[162404]=159890;
+  mod.recipes[162407]=159891;
+  mod.recipes[162406]=159891;
+  mod.recipes[162401]=162474;
+  mod.recipes[162400]=162472;
+  mod.recipes[162403]=159889;
+  mod.recipes[162402]=159889;
 
 end

@@ -138,6 +138,8 @@ function mod.LoadRecipes()
   mod.recipes[14488]=13864;
   mod.recipes[14489]=13871;
   mod.recipes[10463]=10025;
+  mod.recipes[16112]=6451;
+  mod.recipes[16113]=8544;
 
   --BC
 
@@ -223,6 +225,8 @@ function mod.LoadRecipes()
   mod.recipes[32438]=32392;
   mod.recipes[34319]=151790;
   mod.recipes[38229]=38225;
+  mod.recipes[21992]=21990;
+  mod.recipes[21993]=21991;
 
   --Woltk
 
@@ -257,6 +261,7 @@ function mod.LoadRecipes()
   mod.recipes[47636]=47606;
   mod.recipes[47639]=47586;
   mod.recipes[47638]=47604;
+  mod.recipes[39152]=34722;
 
   --Cataclysm
 
@@ -414,5 +419,37 @@ function mod.LoadRecipes()
   mod.recipes[137958]=126989;
   mod.recipes[137971]=126996;
   mod.recipes[137970]=126997;
+  mod.recipes[142333]=142332;
+
+  --BfA
+
+  mod.recipes[162772]=154700;
+  mod.recipes[163026]=154696;
+  mod.recipes[163027]=154696;
+  mod.recipes[162438]=159914;
+  mod.recipes[162439]=159915;
+  mod.recipes[162510]=162478;
+  mod.recipes[162430]=162478;
+  mod.recipes[162431]=159917;
+  mod.recipes[162432]=159917;
+  mod.recipes[162433]=159912;
+  mod.recipes[162434]=159912;
+  mod.recipes[162435]=159913;
+  mod.recipes[162436]=159913;
+  mod.recipes[162437]=159914;
+  mod.recipes[162441]=159916;
+  mod.recipes[162769]=154695;
+  mod.recipes[162444]=154706;
+  mod.recipes[162427]=154700;
+  mod.recipes[162440]=159915;
+  mod.recipes[162443]=154707;
+  mod.recipes[162442]=159916;
+  mod.recipes[162445]=154705;
+  mod.recipes[162422]=154696;
+  mod.recipes[162421]=154695;
+  mod.recipes[162428]=162476;
+  mod.recipes[162507]=162487;
+  mod.recipes[162508]=162476;
+  mod.recipes[162509]=162488;
 
 end

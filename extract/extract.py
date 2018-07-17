@@ -36,6 +36,7 @@ expansions[4] = "Cataclysm"
 expansions[5] = "Pandaria"
 expansions[6] = "WoD"
 expansions[7] = "Legion"
+expansions[8] = "BfA"
 
 log = None
 

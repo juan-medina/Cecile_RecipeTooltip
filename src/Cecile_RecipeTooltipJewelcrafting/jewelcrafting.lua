@@ -418,6 +418,7 @@ function mod.LoadRecipes()
   mod.recipes[71902]=71837;
   mod.recipes[71903]=71838;
   mod.recipes[71904]=71839;
+  mod.recipes[71905]=71840;
   mod.recipes[71906]=71841;
   mod.recipes[71907]=71842;
   mod.recipes[52389]=52230;
@@ -676,6 +677,7 @@ function mod.LoadRecipes()
   mod.recipes[137814]=130246;
   mod.recipes[137815]=130247;
   mod.recipes[137816]=130248;
+  mod.recipes[137817]=130223;
   mod.recipes[137810]=130242;
   mod.recipes[137811]=130243;
   mod.recipes[137812]=130244;
@@ -743,5 +745,22 @@ function mod.LoadRecipes()
   mod.recipes[137857]=130243;
   mod.recipes[137858]=130244;
   mod.recipes[137859]=136711;
+
+  --BfA
+
+  mod.recipes[162382]=153639;
+  mod.recipes[163025]=159939;
+  mod.recipes[162380]=153684;
+  mod.recipes[162381]=153683;
+  mod.recipes[163024]=159939;
+  mod.recipes[162379]=153685;
+  mod.recipes[162385]=153640;
+  mod.recipes[162764]=153639;
+  mod.recipes[162765]=153640;
+  mod.recipes[162760]=153686;
+  mod.recipes[162761]=153685;
+  mod.recipes[162762]=153684;
+  mod.recipes[162763]=153683;
+  mod.recipes[162378]=153686;
 
 end

@@ -317,4 +317,21 @@ function mod.LoadRecipes()
   mod.recipes[133840]=133569;
   mod.recipes[133873]=133681;
 
+  --BfA
+
+  mod.recipes[163833]=163781;
+  mod.recipes[162292]=154889;
+  mod.recipes[162294]=154887;
+  mod.recipes[162295]=154888;
+  mod.recipes[162296]=154885;
+  mod.recipes[162297]=154886;
+  mod.recipes[162290]=154883;
+  mod.recipes[162286]=154882;
+  mod.recipes[162285]=154881;
+  mod.recipes[162293]=154891;
+  mod.recipes[162287]=156525;
+  mod.recipes[162289]=156526;
+  mod.recipes[162288]=156526;
+  mod.recipes[162291]=154884;
+
 end
